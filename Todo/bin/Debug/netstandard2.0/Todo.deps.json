@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "239d3d31d69919ec511dcc665e7470c2cee49b93"
+    "signature": "d064a4ba69dbdaf5f571219892badefd5a7df62d"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,8 @@
     ".NETStandard,Version=v2.0/": {
       "Todo/1.0.0": {
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "NETStandard.Library": "2.0.3",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
@@ -16,6 +18,25 @@
         },
         "runtime": {
           "Todo.dll": {}
+        }
+      },
+      "Microsoft.AppCenter/1.9.0": {
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.9.0.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -87,6 +108,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AppCenter/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jUCmustijWMUCKlY2kzMUuPqcoVxCSJBR2FpjUQsR7kUTdrPvoKgfPeSr/b6eF5g3nLRbl6GRW7StnnY7yMh+Q==",
+      "path": "microsoft.appcenter/1.9.0",
+      "hashPath": "microsoft.appcenter.1.9.0.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Crashes/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TE1huyfrNaMOXjr+zAtX5hZ5TQVsWlCKyjIeNkLXT5TBRW54TpmEXEAOw6oOvqP61qDDT5RKUNeptSAd7qSQxQ==",
+      "path": "microsoft.appcenter.crashes/1.9.0",
+      "hashPath": "microsoft.appcenter.crashes.1.9.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

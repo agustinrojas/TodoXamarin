@@ -18,6 +18,6 @@ C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Vi
 C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.csproj.CoreCompileInputs.cache
 C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.AssemblyInfoInputs.cache
 C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.AssemblyInfo.cs
-C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.dll
 C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.pdb
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo\obj\Debug\netstandard2.0\Todo.csprojAssemblyReference.cache

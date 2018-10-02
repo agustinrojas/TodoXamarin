@@ -29,3 +29,9 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
 System.Reflection.Extensions
+Microsoft.AppCenter.Android.Bindings
+Microsoft.AppCenter
+Microsoft.AppCenter.Crashes.Android.Bindings
+Microsoft.AppCenter.Crashes
+Microsoft.AppCenter.Analytics.Android.Bindings
+Microsoft.AppCenter.Analytics

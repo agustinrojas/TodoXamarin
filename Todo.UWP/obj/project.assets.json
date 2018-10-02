@@ -2,6 +2,85 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -234,6 +313,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
         "type": "package",
         "build": {
@@ -301,7 +389,7 @@
       "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.5": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         },
         "runtimeTargets": {
           "runtimes/win10-arm/native/e_sqlite3.dll": {
@@ -358,6 +446,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -371,6 +462,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -602,6 +738,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
@@ -847,7 +992,7 @@
           "runtimes/win10-arm/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -890,6 +1035,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -903,6 +1051,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1134,6 +1327,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
@@ -1380,7 +1582,7 @@
           "runtimes/win10-arm/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -1423,6 +1625,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -1436,6 +1641,47 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1668,6 +1914,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
         "type": "package",
         "build": {
@@ -1735,7 +1990,7 @@
       "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.5": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -1778,6 +2033,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -1791,6 +2049,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2022,6 +2325,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
@@ -2267,7 +2579,7 @@
           "runtimes/win10-x64/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -2310,6 +2622,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -2323,6 +2638,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2554,6 +2914,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
@@ -2800,7 +3169,7 @@
           "runtimes/win10-x64/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -2843,6 +3212,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -2856,6 +3228,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -3087,6 +3504,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
@@ -3332,7 +3758,7 @@
           "runtimes/win10-x86/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -3375,6 +3801,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -3388,6 +3817,51 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
+      "Microsoft.AppCenter/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.AppCenter.Analytics.dll": {}
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AppCenter": "1.9.0"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.AppCenter.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.AppCenter.Crashes.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -3619,6 +4093,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk/2.1.1": {
@@ -3865,7 +4348,7 @@
           "runtimes/win10-x86/native/e_sqlite3.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
         }
       },
       "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.5": {
@@ -3908,6 +4391,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AppCenter": "1.9.0",
+          "Microsoft.AppCenter.Analytics": "1.9.0",
+          "Microsoft.AppCenter.Crashes": "1.9.0",
           "Xamarin.Forms": "3.1.0.583944",
           "sqlite-net": "1.0.8",
           "sqlite-net-pcl": "1.4.118"
@@ -3922,6 +4408,67 @@
     }
   },
   "libraries": {
+    "Microsoft.AppCenter/1.9.0": {
+      "sha512": "jUCmustijWMUCKlY2kzMUuPqcoVxCSJBR2FpjUQsR7kUTdrPvoKgfPeSr/b6eF5g3nLRbl6GRW7StnnY7yMh+Q==",
+      "type": "package",
+      "path": "microsoft.appcenter/1.9.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.dll",
+        "lib/uap10.0/Microsoft.AppCenter.dll",
+        "microsoft.appcenter.1.9.0.nupkg.sha512",
+        "microsoft.appcenter.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Analytics/1.9.0": {
+      "sha512": "bHXciKGX6WOZlxomjB/gfC+M191TFMN07mjzEUjBj1agNJ3wG8d8fOC7WZKBRbWN8APZ7OyNfZaKCPFGzyPcJw==",
+      "type": "package",
+      "path": "microsoft.appcenter.analytics/1.9.0",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Analytics.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Analytics.dll",
+        "lib/uap10.0/Microsoft.AppCenter.Analytics.dll",
+        "microsoft.appcenter.analytics.1.9.0.nupkg.sha512",
+        "microsoft.appcenter.analytics.nuspec"
+      ]
+    },
+    "Microsoft.AppCenter.Crashes/1.9.0": {
+      "sha512": "TE1huyfrNaMOXjr+zAtX5hZ5TQVsWlCKyjIeNkLXT5TBRW54TpmEXEAOw6oOvqP61qDDT5RKUNeptSAd7qSQxQ==",
+      "type": "package",
+      "path": "microsoft.appcenter.crashes/1.9.0",
+      "files": [
+        ".signature.p7s",
+        "build/uap10.0/Microsoft.AppCenter.Crashes.targets",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.AppCenter.Crashes.dll",
+        "microsoft.appcenter.crashes.1.9.0.nupkg.sha512",
+        "microsoft.appcenter.crashes.nuspec",
+        "ref/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
+        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.0.0": {
       "sha512": "LOVoWPYT9iJu7/CKsWt6hm5b2FSCfuJAOD1CUEoa0OEL1xR3THY+NPtRL57jmV6gVZOIiuw7iro60r4MV6sODA==",
       "type": "package",
@@ -6311,6 +6858,30 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Newtonsoft.Json/6.0.1": {
+      "sha512": "tZ4TnfiXc3CUDZSZxXWcFOq5nDHxYY05qSDfZEJ654YOYzrPPOBgvSwJzr4jkTxeK5uoXmFG93Fq1lWDeLSmmA==",
+      "type": "package",
+      "path": "newtonsoft.json/6.0.1",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+monotouch+monoandroid/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+monotouch+monoandroid/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8/Newtonsoft.Json.xml",
+        "newtonsoft.json.6.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
       "sha512": "ZGShwJB9yNwHyM+w7g8int9gmurykzvy+SWv74+lCul0ddTmtI9WhXrAg3Dyub9urV7/lUtUjCjH+cSC5/5t7A==",
       "type": "package",
@@ -7696,6 +8267,9 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
+      "Microsoft.AppCenter >= 1.9.0",
+      "Microsoft.AppCenter.Analytics >= 1.9.0",
+      "Microsoft.AppCenter.Crashes >= 1.9.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.1",
       "Todo >= 1.0.0",
       "Xamarin.Forms >= 3.1.0.583944",
@@ -7743,6 +8317,18 @@
     "frameworks": {
       "uap10.0.16299": {
         "dependencies": {
+          "Microsoft.AppCenter": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          },
+          "Microsoft.AppCenter.Analytics": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          },
+          "Microsoft.AppCenter.Crashes": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.0.1, )"
