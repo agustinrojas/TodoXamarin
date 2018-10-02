@@ -1,0 +1,8 @@
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\optimized\
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\Todo.iOS.csprojAssemblyReference.cache
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.iOS\obj\iPhone\Debug\Todo.iOS.csproj.CoreCompileInputs.cache

@@ -1,0 +1,17 @@
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\bin\Debug\Todo.Test.dll
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\bin\Debug\Todo.Test.pdb
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\bin\Debug\nunit.framework.dll
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\bin\Debug\Xamarin.UITest.dll
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\obj\Debug\Todo.Test.csproj.CoreCompileInputs.cache
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\obj\Debug\Todo.Test.csproj.CopyComplete
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\obj\Debug\Todo.Test.dll
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\obj\Debug\Todo.Test.pdb
+C:\Users\agustin.rojas\Desktop\TODO-Xamarin\Todo.Test\obj\Debug\Todo.Test.csprojAssemblyReference.cache
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\bin\Debug\Todo.Test.dll
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\bin\Debug\Todo.Test.pdb
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\bin\Debug\nunit.framework.dll
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\bin\Debug\Xamarin.UITest.dll
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\obj\Debug\Todo.Test.csproj.CoreCompileInputs.cache
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\obj\Debug\Todo.Test.csproj.CopyComplete
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\obj\Debug\Todo.Test.dll
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.Test\obj\Debug\Todo.Test.pdb

@@ -1,0 +1,1 @@
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.UWP\Todo.UWP.csproj;x86
