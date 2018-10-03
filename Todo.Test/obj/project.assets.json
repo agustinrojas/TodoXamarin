@@ -133,7 +133,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/2.6.4": {
+      "NUnit/2.6.5": {
         "type": "package",
         "compile": {
           "lib/nunit.framework.dll": {}
@@ -935,7 +935,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/2.6.4": {
+      "NUnit/2.6.5": {
         "type": "package",
         "compile": {
           "lib/nunit.framework.dll": {}
@@ -1655,7 +1655,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/2.6.4": {
+      "NUnit/2.6.5": {
         "type": "package",
         "compile": {
           "lib/nunit.framework.dll": {}
@@ -2375,7 +2375,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "NUnit/2.6.4": {
+      "NUnit/2.6.5": {
         "type": "package",
         "compile": {
           "lib/nunit.framework.dll": {}
@@ -3124,15 +3124,15 @@
         "tools/install.ps1"
       ]
     },
-    "NUnit/2.6.4": {
-      "sha512": "cmSPvaCMRSP0DI19FP1Liw9DyJY3E/vOY1OrVaeJBZpZFWHkmT3fB9ngGWnZX/ftvA7zJEbghEaw3Yd+u4YFAw==",
+    "NUnit/2.6.5": {
+      "sha512": "CmfdapZtaAVarEmaaTcR5qHWeN8JAkRem9NmhSGlgs5qMHtOyizqPaQQ/ynSINDS0XyMIkTNlaaDho8nM8w/nA==",
       "type": "package",
-      "path": "nunit/2.6.4",
+      "path": "nunit/2.6.5",
       "files": [
         "lib/nunit.framework.dll",
         "lib/nunit.framework.xml",
         "license.txt",
-        "nunit.2.6.4.nupkg.sha512",
+        "nunit.2.6.5.nupkg.sha512",
         "nunit.nuspec"
       ]
     },
@@ -5846,7 +5846,7 @@
       "Microsoft.AppCenter >= 1.9.0",
       "Microsoft.AppCenter.Analytics >= 1.9.0",
       "Microsoft.AppCenter.Crashes >= 1.9.0",
-      "NUnit >= 2.6.4",
+      "NUnit >= 2.6.5",
       "NUnitTestAdapter >= 2.1.1",
       "Xamarin.UITest >= 2.2.4"
     ]
@@ -5898,7 +5898,7 @@
           },
           "NUnit": {
             "target": "Package",
-            "version": "[2.6.4, )"
+            "version": "[2.6.5, )"
           },
           "NUnitTestAdapter": {
             "target": "Package",

@@ -1,0 +1,8 @@
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\coremlc\_PartialAppManifest.items
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\optimized\
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\Todo.iOS.csprojAssemblyReference.cache
+C:\Users\agustin.rojas\source\repos\TodoXamarin\Todo.iOS\obj\iPhoneSimulator\Release\Todo.iOS.csproj.CoreCompileInputs.cache
